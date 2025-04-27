@@ -7,7 +7,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://52.187.53.213:80/colours")
+    fetch("http://52.187.53.213/colours")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
